@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVH-Zt-l37">
+                                <rect key="frame" x="16" y="325.5" width="34.5" height="16.5"/>
+                                <color key="backgroundColor" red="1" green="0.97188687799999995" blue="0.16780093169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igc-0N-u34">
+                                <rect key="frame" x="66.5" y="325.5" width="34.5" height="16.5"/>
+                                <color key="backgroundColor" red="1" green="0.97188687799999995" blue="0.16780093169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yp2-Fo-7O8">
+                                <rect key="frame" x="117" y="325.5" width="242" height="16.5"/>
+                                <color key="backgroundColor" red="1" green="0.97188687799999995" blue="0.16780093169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16.5" id="6Jd-VI-Yat"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYf-iY-Vfd">
+                                <rect key="frame" x="136" y="362" width="103.5" height="207"/>
+                                <color key="backgroundColor" red="0.30196078430000001" green="0.76470588240000004" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="cYf-iY-Vfd" secondAttribute="width" multiplier="2:1" id="wOX-4x-DvN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="igc-0N-u34" firstAttribute="leading" secondItem="wVH-Zt-l37" secondAttribute="trailing" constant="16" id="4kc-7K-BAR"/>
+                            <constraint firstItem="wVH-Zt-l37" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5hU-3y-wK4"/>
+                            <constraint firstItem="Yp2-Fo-7O8" firstAttribute="leading" secondItem="igc-0N-u34" secondAttribute="trailing" constant="16" id="NuW-QM-44f"/>
+                            <constraint firstAttribute="trailing" secondItem="Yp2-Fo-7O8" secondAttribute="trailing" constant="16" id="VTB-G1-hJH"/>
+                            <constraint firstItem="cYf-iY-Vfd" firstAttribute="width" secondItem="igc-0N-u34" secondAttribute="width" multiplier="3" id="aug-IK-s0o"/>
+                            <constraint firstItem="igc-0N-u34" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bb7-HM-bd1"/>
+                            <constraint firstItem="cYf-iY-Vfd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bqM-eb-bQv"/>
+                            <constraint firstItem="Yp2-Fo-7O8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eYd-Na-It9"/>
+                            <constraint firstItem="cYf-iY-Vfd" firstAttribute="top" secondItem="Yp2-Fo-7O8" secondAttribute="bottom" constant="20" id="glk-CL-tk9"/>
+                            <constraint firstItem="wVH-Zt-l37" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="xdK-7J-V91"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="View1" destination="cYf-iY-Vfd" id="eD0-hG-XBz"/>
+                        <outlet property="label1" destination="wVH-Zt-l37" id="1Qj-mH-iCC"/>
+                        <outlet property="label2" destination="igc-0N-u34" id="43e-Sl-aOI"/>
+                        <outlet property="label3" destination="Yp2-Fo-7O8" id="I3H-o1-UgI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
